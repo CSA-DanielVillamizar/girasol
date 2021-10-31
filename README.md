@@ -1,4 +1,4 @@
-Girasol Android
+Jardineria
 =================
 
 Una aplicación de jardinería que ilustra las mejores prácticas de desarrollo de Android con Android Jetpack.
