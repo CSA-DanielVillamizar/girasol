@@ -3,7 +3,7 @@ Jardineria
 
 Una aplicación de jardinería que ilustra las mejores prácticas de desarrollo de Android con Android Jetpack.
 
-Girasol Android está actualmente bajo un fuerte desarrollo.
+Jardineria está actualmente bajo un fuerte desarrollo.
 Tenga en cuenta que algunos cambios (como las modificaciones del esquema de la base de datos) no son hacia atrás
 compatible y puede hacer que la aplicación se bloquee. En este
 en su caso, desinstale y vuelva a instalar la aplicación.
