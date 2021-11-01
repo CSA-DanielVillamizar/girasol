@@ -29,33 +29,33 @@ class PlantTest {
     private lateinit var plant: Plant
 
     @Before fun setUp() {
-        plant = Plant("1", "Tomato", "A red vegetable", 1, 2, "")
+        plant = Plant("1", "Tomate", "A red vegetable", 1, 2, "")
     }
 
     @Test fun test_default_values() {
-        val defaultPlant = Plant("2", "Apple", "Description", 1)
+        val defaultPlant = Plant("2", "Manzana", "Description", 1)
         assertEquals(7, defaultPlant.wateringInterval)
         assertEquals("", defaultPlant.imageUrl)
     }
 
     @Test fun test_shouldBeWatered() {
         Calendar.getInstance().let { now ->
-            // Generate lastWateringDate from being as copy of now.
+            // Generar lastWateringDate a partir de ser como copia de ahora.
             val lastWateringDate = Calendar.getInstance()
 
-            // Test for lastWateringDate is today.
+            // La prueba para el últimoWateringDate es hoy.
             lastWateringDate.time = now.time
             assertFalse(plant.shouldBeWatered(now, lastWateringDate.apply { add(DAY_OF_YEAR, -0) }))
 
-            // Test for lastWateringDate is yesterday.
+            // La prueba para el últimoWateringDate es ayer.
             lastWateringDate.time = now.time
             assertFalse(plant.shouldBeWatered(now, lastWateringDate.apply { add(DAY_OF_YEAR, -1) }))
 
-            // Test for lastWateringDate is the day before yesterday.
+            // La prueba para el últimoWateringDate es anteayer.
             lastWateringDate.time = now.time
             assertFalse(plant.shouldBeWatered(now, lastWateringDate.apply { add(DAY_OF_YEAR, -2) }))
 
-            // Test for lastWateringDate is some days ago, three days ago, four days ago etc.
+            // La prueba para el últimoWateringDate es hace algunos días, hace tres días, hace cuatro días, etc.
             lastWateringDate.time = now.time
             assertTrue(plant.shouldBeWatered(now, lastWateringDate.apply { add(DAY_OF_YEAR, -3) }))
         }

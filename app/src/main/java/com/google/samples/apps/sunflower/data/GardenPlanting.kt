@@ -1,17 +1,17 @@
 /*
- * Copyright 2018 Google LLC
+ * Derechos de autor 2021 Google LLC
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * Licenciado bajo la Licencia Apache, Versión 2.0 (la "Licencia");
+ * no puede utilizar este archivo excepto en cumplimiento con la Licencia.
+ * Puede obtener una copia de la Licencia en
  *
- *     https://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * A menos que lo exija la ley aplicable o se acuerde por escrito, el software
+ * distribuido bajo la Licencia se distribuye "TAL CUAL",
+ * SIN GARANTÍAS NI CONDICIONES DE NINGÚN TIPO, ya sean expresas o implícitas.
+ * Consulte la Licencia para conocer el idioma específico que rige los permisos y
+ * limitaciones bajo la Licencia.
  */
 
 package com.google.samples.apps.sunflower.data
@@ -24,12 +24,12 @@ import androidx.room.PrimaryKey
 import java.util.Calendar
 
 /**
- * [GardenPlanting] represents when a user adds a [Plant] to their garden, with useful metadata.
- * Properties such as [lastWateringDate] are used for notifications (such as when to water the
- * plant).
+ * [GardenPlanting] representa cuando un usuario agrega una [Plant] a su jardín, con metadatos útiles.
+ * Propiedades como [lastWateringDate] se utilizan para las notificaciones (como cuándo regar el
+ * planta).
  *
- * Declaring the column info allows for the renaming of variables without implementing a
- * database migration, as the column name would not change.
+ * Declarar la información de la columna permite cambiar el nombre de las variables sin implementar un
+ * migración de la base de datos, ya que el nombre de la columna no cambiaría.
  */
 @Entity(
     tableName = "garden_plantings",

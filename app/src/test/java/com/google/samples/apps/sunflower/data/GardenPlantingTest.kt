@@ -36,7 +36,7 @@ class GardenPlantingTest {
         assertEquals(0L, gardenPlanting.gardenPlantingId)
     }
 
-    // Only Year/Month/Day precision is needed for comparing GardenPlanting Calendar entries
+    // Solo se necesita precisión año/mes/día para comparar las entradas del calendario gardenPlanting
     private fun assertYMD(expectedCal: Calendar, actualCal: Calendar) {
         assertThat(actualCal.get(YEAR), equalTo(expectedCal.get(YEAR)))
         assertThat(actualCal.get(MONTH), equalTo(expectedCal.get(MONTH)))
