@@ -1,27 +1,27 @@
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in /usr/local/google/home/tiem/Android/Sdk/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the proguardFiles
-# directive in build.gradle.
+# Agregue reglas ProGuard específicas del proyecto aquí.
+# De forma predeterminada, los indicadores de este archivo se anexan a los indicadores especificados
+# en /usr/local/google/home/tiem/Android/Sdk/tools/proguard/proguard-android.txt
+# Puede editar la ruta de inclusión y el orden cambiando los proguardFiles
+# directiva en build.gradle.
 #
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# Para más detalles, ver
+# http://developer.android.com/guide/developing/tools/proguard.html
 
-# Add any project specific keep options here:
+# Agregue cualquier opción de mantener específica del proyecto aquí:
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
+# Si su proyecto utiliza WebView con JS, quite los comentarios de lo siguiente
+# y especifique el nombre de clase completo en la interfaz de JavaScript
+# clase:
+#-keepclassmembers clase fqcn.of.javascript.interface.for.webview {
+# público *;
 #}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
+# Quite el comentario de esto para conservar la información del número de línea para
+# depuración de trazas de pila.
 #-keepattributes SourceFile,LineNumberTable
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
+# Si mantiene la información del número de línea, quite los comentarios a
+# ocultar el nombre del archivo de origen original.
 #-renamesourcefileattribute SourceFile
 
 # ServiceLoader support

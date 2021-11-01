@@ -1,17 +1,17 @@
 /*
- * Copyright 2018 Google LLC
+* Derechos de autor 2021 Google LLC
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * Licenciado bajo la Licencia Apache, Versión 2.0 (la "Licencia");
+ * no puede utilizar este archivo excepto en cumplimiento con la Licencia.
+ * Puede obtener una copia de la Licencia en
  *
  *     https://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+* A menos que lo exija la ley aplicable o se acuerde por escrito, el software
+ * distribuido bajo la Licencia se distribuye "TAL CUAL",
+ * SIN GARANTÍAS NI CONDICIONES DE NINGÚN TIPO, ya sean expresas o implícitas.
+ * Consulte la Licencia para conocer el idioma específico que rige los permisos y
+ * limitaciones bajo la Licencia.
  */
 
 package com.google.samples.apps.sunflower.utilities
@@ -21,11 +21,11 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
 /**
- * Helper method for testing LiveData objects, from
+ * Método auxiliar para probar objetos LiveData, desde
  * https://github.com/googlesamples/android-architecture-components.
  *
- * Get the value from a LiveData object. We're waiting for LiveData to emit, for 2 seconds.
- * Once we got a notification via onChanged, we stop observing.
+ * Obtener el valor de un objeto LiveData. Estamos esperando a que LiveData emita, durante 2 segundos.
+ * Una vez que recibimos una notificación a través de onChanged, dejamos de observar.
  */
 @Throws(InterruptedException::class)
 fun <T> getValue(liveData: LiveData<T>): T {
